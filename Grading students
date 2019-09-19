@@ -1,0 +1,17 @@
+n=int(input())
+li=[]
+new=[]
+for i in range(n):
+    li.append(int(input()))
+for i in range(0,n):
+    if li[i]>37:
+        mod=li[i]%5
+        addvalue=5-mod
+        if addvalue < 3:
+            new.append(addvalue+li[i])
+        else:
+            new.append(li[i])
+    else :
+        new.append(li[i])
+for i in range(0,n):
+    print(new[i])
