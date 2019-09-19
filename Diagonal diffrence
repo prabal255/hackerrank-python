@@ -1,0 +1,17 @@
+sum1 = 0
+sum2 = 0
+c1 = 0
+n = int(input())
+arr = []
+for i in range(n):
+    arr.extend(list(map(int, input().rstrip().split())))
+for i in range(0, len(arr), n+1):
+    sum1 = sum1 + arr[i]
+for i in range(n-1, len(arr) - 1, n-1):
+    sum2 = sum2 + arr[i]
+if sum1 > sum2:
+    c1 = sum1 - sum2
+else:
+    c1 = sum2 - sum1
+
+print(c1)
