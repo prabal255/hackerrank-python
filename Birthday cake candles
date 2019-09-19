@@ -1,0 +1,11 @@
+  #!/bin/python3
+n=int(input())
+sum1=0
+#sum2=0
+arr = list(map(int, input().rstrip().split()))
+max1=max(arr)
+for i in range(n):
+    if arr[i]==max1:
+        sum1=sum1+1
+
+print(sum1)
