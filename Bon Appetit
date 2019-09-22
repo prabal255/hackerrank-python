@@ -1,0 +1,14 @@
+
+n, k=input().split()    #reading a line of two space separated integers
+n, k=int(n), int(k)
+bill=list(map(int,input().split()))
+b=int(input())
+cot=0
+for i in range(len(bill)):
+    if i!=k:
+        cot=cot+bill[i]
+cot=cot//2
+if cot!=b:
+    print(b-cot)
+else :
+    print("Bon Appetit")
