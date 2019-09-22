@@ -1,0 +1,10 @@
+yr = int(input().strip())
+x=13
+y='09' 
+if yr==1918:
+    x=26   
+elif ((yr%4==0 and yr%100!=0) or yr%400==0) or(yr<1918 and yr %4==0):
+    x=x-1
+yr=str(yr)
+x=str(x)
+print(x+'.'+'09'+'.'+yr)
