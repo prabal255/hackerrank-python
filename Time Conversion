@@ -1,0 +1,17 @@
+#!/bin/python3
+
+st=input().split(':')
+#print(st)
+st1=""
+cnt=2
+if (st[-1][-2]=='p' or st[-1][-2]=='P') and st[0] != '12':
+    st[0]=int(st[0])+12
+    st[0]=str(st[0])
+elif st[0]=='12' and  st[-1][-2]=='A':
+    st[0]='00'
+for i in st:
+        st1=st1+i
+        if cnt>0:
+            st1=st1 + ':'
+            cnt=cnt-1
+print(st1[0:8])    
