@@ -1,0 +1,26 @@
+no=int(input())
+li=[]
+while no>0:
+    no=no-1
+    mi=input().split()
+    str=mi[0]
+    if str=='insert':
+        ind=int(mi[1])
+        val=int(mi[2])
+        li.insert(ind,val)
+    elif str=='print':
+        print(li)
+
+    elif str=='remove':
+        val=int(mi[1])
+        li.remove(val)
+    elif str=='append' :
+        li.append(int(mi[1]))
+    elif str=='sort':
+        li.sort()
+
+    elif str=='pop':
+        li.pop()
+
+    elif str=='reverse':
+        li.reverse()
