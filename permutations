@@ -1,0 +1,20 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations as p
+
+word,no=input().split()
+li=[]
+for i in word:
+    li.append(i)
+c=int(no)
+perm = p(li, c)
+st=[]
+# Print the obtained permutations
+for i in list(perm):
+    l=''
+    for k in  range(c):
+            l=l+i[k]
+    if l not in st:
+        st.append(l)
+st.sort()
+for i in st:
+    print(i)
