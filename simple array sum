@@ -1,6 +1,7 @@
 #!/bin/python3
 count=0
 x=int(input())
+print("enter the list of space separated input")
 
 y = list(map(int, input('Enter numbers: ').split()))
 print(y)
